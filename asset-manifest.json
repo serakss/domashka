@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/domashka/static/css/main.f06e351a.css",
+    "main.js": "/domashka/static/js/main.9d6206e6.js",
+    "static/js/787.66cb4309.chunk.js": "/domashka/static/js/787.66cb4309.chunk.js",
+    "index.html": "/domashka/index.html",
+    "main.f06e351a.css.map": "/domashka/static/css/main.f06e351a.css.map",
+    "main.9d6206e6.js.map": "/domashka/static/js/main.9d6206e6.js.map",
+    "787.66cb4309.chunk.js.map": "/domashka/static/js/787.66cb4309.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f06e351a.css",
+    "static/js/main.9d6206e6.js"
+  ]
+}
