@@ -7,6 +7,8 @@ import success200 from './images/200.svg'
 import error400 from './images/400.svg'
 import error500 from './images/500.svg'
 import errorUnknown from './images/error.svg'
+import {Simulate} from "react-dom/test-utils";
+import error = Simulate.error;
 
 /*
 * 1 - дописать функцию send
@@ -25,7 +27,7 @@ const HW13 = () => {
             x === null
                 ? 'https://xxxxxx.ccc' // имитация запроса на не корректный адрес
                 : 'https://incubator-personal-page-back.herokuapp.com/api/3.0/homework/test'
-
+        console.log(x)
         setCode('')
         setImage('')
         setText('')
@@ -36,12 +38,25 @@ const HW13 = () => {
             .then((res) => {
                 setCode('Код 200!')
                 setImage(success200)
+                setInfo(res.data.info)
+                setText(res.data.errorText)
+                console.log(res)
                 // дописать
 
             })
             .catch((e) => {
-                // дописать
+                console.log({e})
+                console.log("кач")
+                if (e.response.data) {
+                    setInfo(e.response ? e.response.data.info : e.message)
+                    setText(e.response ? e.response.data.errorText : e.message)
+                    setCode(e.response ? e.response.status : e.message)
+                    console.log("dddd")
+                } else {
+                    setInfo(e.name)
 
+                    // дописать
+                }
             })
     }
 
@@ -55,6 +70,7 @@ const HW13 = () => {
                         id={'hw13-send-true'}
                         onClick={send(true)}
                         xType={'secondary'}
+                        disabled={info === "...loading" ? true : false}
                         // дописать
 
                     >
@@ -64,6 +80,7 @@ const HW13 = () => {
                         id={'hw13-send-false'}
                         onClick={send(false)}
                         xType={'secondary'}
+                        disabled={info === "...loading" ? true : false}
                         // дописать
 
                     >
@@ -73,6 +90,7 @@ const HW13 = () => {
                         id={'hw13-send-undefined'}
                         onClick={send(undefined)}
                         xType={'secondary'}
+                        disabled={info === "...loading" ? true : false}
                         // дописать
 
                     >
@@ -82,6 +100,7 @@ const HW13 = () => {
                         id={'hw13-send-null'}
                         onClick={send(null)} // имитация запроса на не корректный адрес
                         xType={'secondary'}
+                        disabled={info === "...loading" ? true : false}
                         // дописать
 
                     >
