@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/domashka/static/css/main.65b9f139.css",
-    "main.js": "/domashka/static/js/main.5d672cfb.js",
+    "main.js": "/domashka/static/js/main.037579ef.js",
     "static/js/787.66cb4309.chunk.js": "/domashka/static/js/787.66cb4309.chunk.js",
     "static/media/avatar.png": "/domashka/static/media/avatar.d947cb9d0d13765666b6.png",
+    "static/media/200.svg": "/domashka/static/media/200.2b4de1542921864a6ecb8c3301ea4670.svg",
     "static/media/404.svg": "/domashka/static/media/404.9ec31c0ba8d95b0480272e46af98c955.svg",
     "static/media/closeOutline.svg": "/domashka/static/media/closeOutline.b64ba402fac8a549bc2de97e9cf84a61.svg",
     "static/media/editIcon.svg": "/domashka/static/media/editIcon.11c8e1c42f9a4eae81897d68e091eb42.svg",
@@ -11,11 +12,11 @@
     "index.html": "/domashka/index.html",
     "static/media/burger.svg": "/domashka/static/media/burger.700e416f7bfe3697f96b36c778d25355.svg",
     "main.65b9f139.css.map": "/domashka/static/css/main.65b9f139.css.map",
-    "main.5d672cfb.js.map": "/domashka/static/js/main.5d672cfb.js.map",
+    "main.037579ef.js.map": "/domashka/static/js/main.037579ef.js.map",
     "787.66cb4309.chunk.js.map": "/domashka/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.65b9f139.css",
-    "static/js/main.5d672cfb.js"
+    "static/js/main.037579ef.js"
   ]
 }
