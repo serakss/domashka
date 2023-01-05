@@ -55,6 +55,7 @@ const HW13 = () => {
                 } else {
                     setInfo(e.name)
 
+
                     // дописать
                 }
             })
