@@ -31,6 +31,8 @@ const HW14 = () => {
     const [techs, setTechs] = useState<string[]>([])
 
     const sendQuery = (value: string) => {
+
+        console.log(value)
         setLoading(true)
         getTechs(value)
             .then((res) => {

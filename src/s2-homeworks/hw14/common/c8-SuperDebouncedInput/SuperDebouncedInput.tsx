@@ -35,9 +35,7 @@ const SuperDebouncedInput: React.FC<SuperDebouncedInputPropsType> = (
 
             clearTimeout(timerId)
             setTimerId(+setTimeout(() => {
-                if (typeof restProps.value === "string") {
-                    onDebouncedChange(restProps.value)
-                }
+                    onDebouncedChange(value)
             }, 1500))
 
             // делает студент
